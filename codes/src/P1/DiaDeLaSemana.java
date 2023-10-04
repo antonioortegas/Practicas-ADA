@@ -1,3 +1,5 @@
+package P1;
+
 public class DiaDeLaSemana {
     public static void main(String[] args) throws Exception {
         int n = Integer.parseInt(args[0]);

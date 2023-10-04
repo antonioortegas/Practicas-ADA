@@ -1,4 +1,7 @@
+package P1;
+
 import java.util.Random;
+
 public class SumaAleatoria {
     public static void main(String[] args) {
         int sumandos = 20;
@@ -14,5 +17,3 @@ public class SumaAleatoria {
         System.out.println(suma);
     }
 }
-
- 

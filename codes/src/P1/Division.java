@@ -1,3 +1,5 @@
+package P1;
+
 public class Division {
     public static void main(String[] args) throws Exception {
         int n1 = Integer.parseInt(args[0]);
