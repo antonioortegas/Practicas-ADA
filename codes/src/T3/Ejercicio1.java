@@ -9,20 +9,21 @@ public class Ejercicio1 {
     */
     public static void main(String[] args) {
         int[] vector = { 0, 1, 2, 3, 4, 5, 6, 7, 8 };
-        System.out.println(buscar(vector, 7, vector.length - 1));
+        int num = 6;
+        System.out.println(buscar(vector, 0, vector.length - 1, num));
     }
 
-    public static int buscar(int[] vector, int menorIndice, int mayorIndice) {
+    public static int buscar(int[] vector, int menorIndice, int mayorIndice, int num) {
         if (menorIndice > mayorIndice) {
             return -1;
         }
         int puntoMedio = (menorIndice + mayorIndice) / 2;
-        if (vector[puntoMedio] == puntoMedio) {
+        if (vector[puntoMedio] == num) {
             return puntoMedio;
-        } else if (vector[puntoMedio] < puntoMedio) {
-            return buscar(vector, puntoMedio + 1, mayorIndice);
+        } else if (vector[puntoMedio] < num) {
+            return buscar(vector, puntoMedio + 1, mayorIndice, num);
         } else {
-            return buscar(vector, menorIndice, puntoMedio - 1);
+            return buscar(vector, menorIndice, puntoMedio - 1, num);
         }
     }
 }
