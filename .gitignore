@@ -2,3 +2,5 @@
 bin
 lib
 *.pdf
+.idea/
+*.iml
